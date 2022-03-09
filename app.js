@@ -9,7 +9,7 @@ func1 = (e) => {
       let loc = document.querySelector("#place").value;
       const keyAPI = `24f8dd8a6c239197fe3f6b7d34b5a7a9`;
 
-let stringPassIn = `http://api.openweathermap.org/data/2.5/weather?q=${loc}&appid=${keyAPI}`
+let stringPassIn = `https://api.openweathermap.org/data/2.5/weather?q=${loc}&appid=${keyAPI}`
 
 fetch(stringPassIn)
 .then((response) => response.json())
