@@ -21,7 +21,7 @@ body {
   z-index: -999999;
 }
 
-form {
+div {
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -32,11 +32,14 @@ form {
 input {
   width: 60vw;
   padding: 20px;
-  margin: 80px;
   font-size: 30px;
   transform: rotate(3deg);
   border: none;
   text-align: center;
+}
+
+input:focus::placeholder {
+  color: transparent;
 }
 
 input:focus {
@@ -45,26 +48,20 @@ input:focus {
     rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
 }
 
-@media screen and (max-width: 500px) {
-  input {
-    font-size: 18px;
-  }
-}
-
-form button {
+button {
   background-color: #7daed4;
   border: 0 solid #e5e7eb;
   box-sizing: border-box;
   color: #000000;
   font-size: 1.5rem;
   font-weight: 500;
-  justify-content: center;
   line-height: 1.75rem;
   padding: 0.75rem 1.65rem;
+  max-width: 760px;
+  margin-top: 10vh;
   text-align: center;
   text-decoration: none #000000 solid;
-  width: 90%;
-  max-width: 460px;
+  width: 90vw;
   cursor: pointer;
   transform: rotate(-4deg);
 }
@@ -84,10 +81,30 @@ button:hover:after {
   left: 2px;
 }
 
+p {
+  width: 60vw;
+  padding: 20px;
+  margin: 80px;
+  font-size: 30px;
+  transform: rotate(3deg);
+  border: none;
+  text-align: center;
+}
+
 @media (min-width: 768px) {
   .button-53 {
     padding: 0.75rem 3rem;
     font-size: 1.25rem;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  input {
+    font-size: 18px;
+  }
+
+  button {
+    margin-left: 1vw;
   }
 }
 
