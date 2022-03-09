@@ -20,33 +20,26 @@ fetch(stringPassIn)
  cityFeels = Math.trunc(data.main.feels_like) - 273;
 summary = `In ${cityName} the temperature is ${cityTemp} degrees. <br> (But it feels like ${cityFeels} degrees!)`;
 document.querySelector('#response').innerHTML = summary;
-
-// if (cityFeels < 8){
-//       isItCold = `Wear your big Jacket`
-//             document.querySelector('#jacket').innerHTML = isItCold;
-//          } else if (cityFeels < 16){
-//             isItCold = `Wear a light Jacket`
-//                   document.querySelector('#jacket').innerHTML = isItCold;
-//          } else (cityFeels < 22){
-//             isItCold = `It's warm. You don't need a jacket!`
-//                   document.querySelector('#jacket').innerHTML = isItCold;
-//       };
    
-   });
 
+if (cityFeels < 2){
+   result = `Wear your biggest coat`;
+         document.querySelector("#jacket").innerHTML = result;
+      } else if (cityFeels < 9){
+         result = `Wear a nice warm jacket`;
+               document.querySelector('#jacket').innerHTML = result;
+            } else if (cityFeels < 18){
+               result = `Wear a light jacket`;
+                     document.querySelector('#jacket').innerHTML = result;
+      } else {
+         result = `It's warm. You don't need a jacket!`;
+               document.querySelector('#jacket').innerHTML = result;
+   };
+   return result;
+
+   });
 }
 
-
-// if (cityFeels < 8){
-//    isItCold = `Wear your big Jacket`
-//          document.querySelector('#jacket').innerHTML = isItCold;
-//       } else if (cityFeels < 16){
-//          isItCold = `Wear a light Jacket`
-//                document.querySelector('#jacket').innerHTML = isItCold;
-//       } else (cityFeels < 22){
-//          isItCold = `It's warm. You don't need a jacket!`
-//                document.querySelector('#jacket').innerHTML = isItCold;
-//    };
 
 
 document.querySelector('button').addEventListener('click', func1);
@@ -86,6 +79,24 @@ document.querySelector('button').addEventListener('click', func1);
 // function gotData(data) {
 //    weather = data;
 // }
+
+
+
+
+
+
+
+// if (cityFeels < 8){
+//    isItCold = `Wear your big Jacket`
+//          document.querySelector('#jacket').innerHTML = isItCold;
+//       } else if (cityFeels < 16){
+//          isItCold = `Wear a light Jacket`
+//                document.querySelector('#jacket').innerHTML = isItCold;
+//       } else (cityFeels < 22){
+//          isItCold = `It's warm. You don't need a jacket!`
+//                document.querySelector('#jacket').innerHTML = isItCold;
+//    };
+
 
 
 
