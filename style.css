@@ -123,11 +123,13 @@ button:hover:after {
 
   #jacket {
     font-size: 50px;
+    width: 80vw;
   }
 
   #response {
     font-size: 16px;
     margin: 20px 0 10px 0;
+    width: 80vw;
   }
 }
 
