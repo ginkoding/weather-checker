@@ -113,11 +113,12 @@ button:hover:after {
 @media screen and (max-width: 500px) {
   input {
     font-size: 18px;
+    margin-top: 20px;
   }
 
   button {
     margin-left: 1vw;
-    margin-top: 5vh;
+    margin-top: 20px;
   }
 
   #jacket {
